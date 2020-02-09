@@ -139,7 +139,7 @@
           let options = {
               language: '<?= $language ?>',
               token: session.token,
-              server: session.sessionPtr.u.split('/irma')[0],
+              server: session.sessionPtr.u.split('/irma/')[0],
               resultJwt: true,
           };
           let promise = irma.handleSession(session.sessionPtr, options);
